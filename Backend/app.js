@@ -11,11 +11,12 @@ const app=express();
 dotenv.config({path:"./.env"});
 
 app.use(cors({
-    
-  origin:"http://localhost:5173",
-  methods:["GET","POST","PUT","DELETE"],
-  credentials:true,
-  
+  origin: [
+    "http://localhost:5173",
+    "https://resilient-creponne-ee09ed.netlify.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
 }));
 
 app.use(express.json());
