@@ -1,0 +1,123 @@
+.register-container{
+  padding:2rem;
+  
+  background-color: #c2c9d0;
+}
+
+.title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin-bottom:2rem;
+  color:rgb(56, 133, 133) ;
+}
+.register-form{
+  
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+  width:60vw;
+  margin: 0px auto;
+  padding:2rem;
+  box-shadow: 2px 2px 10px rgb(9, 27, 79);
+  border-radius:10px;
+  
+}
+.register-form select{
+  padding:0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border:2px solid gray;
+  width:50%;
+  outline:none;
+  background-color:  #c2c9d0;
+}
+
+.register-form input{
+  padding:0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border:2px solid gray;
+  width:50%;
+  outline:none;
+  background-color:  #c2c9d0;
+}
+.role-username,.email-password,.phone-avatar,.street-city,.pincode-state{
+  display: flex;
+  gap: 2rem;
+}
+
+.submit-button{
+  padding: 0.4rem;
+  font-size: larger;
+  font-size: 1.5rem;
+  font-weight: 550;
+  color:rgb(11, 11, 88);
+  background-color:rgb(56, 133, 133) ;
+  border-radius:5px;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  
+  
+}
+.submit-button:hover{
+box-shadow: 1px 2px 5px black;
+}
+
+.register-form p{
+  text-align: center;
+  font-size: 1.1rem;
+  
+  font-weight:400;
+}
+.link{
+   text-decoration: none;
+}
+
+@media (max-width:900px){
+  .role-username{
+    
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  .email-password{
+     display: flex;
+    flex-direction: column;
+  
+  }
+  .phone-avatar{
+     display: flex;
+    flex-direction: column;
+  }
+  .street-city{
+    display: flex;
+    flex-direction: column;
+  }
+  .pincode-state{
+     display: flex;
+    flex-direction: column;
+  }
+  .register-form input{
+  padding:0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border:2px solid gray;
+  width:100%;
+  outline:none;
+  background-color:  #c2c9d0;
+}
+.register-form{
+  
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+  width:90vw;
+  margin: 0px auto;
+  padding:2rem;
+  box-shadow: 2px 2px 10px rgb(9, 27, 79);
+  border-radius:10px;
+  
+}
+}

@@ -1,0 +1,100 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #c2c9d0;
+  color: #2e2e4f;
+  line-height: 1.6;
+  padding-bottom: 4rem;
+  z-index: 1;
+}
+
+.about-hero {
+  background-image: url("https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  background-color: rgba(37, 37, 84, 0.7);
+  padding: 3rem;
+  text-align: center;
+  color: #fff;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #24244d;
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.about-section ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-section ul li::before {
+  content: '✔';
+  color: green;
+  position: absolute;
+  left: 0;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.image-grid img {
+  flex: 1 1 30%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-content {
+    padding: 2rem 1rem;
+  }
+}

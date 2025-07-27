@@ -1,0 +1,55 @@
+.create-container{
+ display: flex;
+  flex-direction: column;
+  padding:1rem 2rem;
+  gap:2rem;
+ 
+  border-radius:20px;
+   background-color: rgb(20, 53, 53);
+  
+}
+.create-container h1{
+ text-align: center;
+ color:rgb(11, 168, 168)
+  
+}
+
+.create-container .createpost-input .form{
+ 
+display: flex;
+flex-direction: column;
+gap:0.6rem;
+}
+.create-container .createpost-input .form label{
+ 
+font-size:1.2rem;
+font-weight: 700;
+color:rgb(78, 78, 174);
+}
+.create-container .createpost-input .form input,textarea{
+ 
+font-size:1rem;
+font-weight: 600;
+color:rgb(56, 133, 133);
+border:none;
+outline: none;
+padding:0.4rem;
+background: transparent;
+/* background-color: gray; */
+border:2px solid gray;
+border-radius: 10px;
+}
+.create-container .createpost-input .form button{
+ 
+padding:0.6rem 0rem;
+font-size:1.5rem;
+font-weight: 700;
+color:rgb(192, 216, 216);
+border-radius:10px;
+border:none;
+outline:none;
+cursor: pointer;
+margin-top:1rem;
+background-color: rgb(78, 78, 174);
+
+}

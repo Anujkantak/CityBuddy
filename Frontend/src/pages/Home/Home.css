@@ -1,0 +1,126 @@
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  padding:1rem;
+   background-color: #c2c9d0;
+  
+}
+
+.home-container .search-container{
+ 
+  border-radius:30px;
+  background-color:rgb(192, 195, 195) ;
+   width:80vw;
+   max-width: 600px;
+   display: flex;
+   border:2px solid rgb(37, 37, 84);
+}
+
+.home-container .search-container input{
+
+  border:none;
+  outline: none;
+  padding:0.8rem ;
+  border-radius:30px;
+  flex:1;
+
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color:rgb(68, 66, 66);
+  
+  
+   
+}
+.no-posts{
+  font-size: 2rem;
+  font-weight: 700;
+  color:rgb(78, 78, 174);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.home-container .search-container label{
+  width:80vw;
+  max-width: 600px;
+  padding:0.8rem 2rem;
+  background-color:rgb(37, 37, 84) ;
+  color:rgb(207, 207, 217);
+  font-size: 1.2rem;
+  font-weight: 600;
+   border-radius:30px;
+   width: auto;
+
+}
+
+.query-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
+  gap:1rem;
+  width:90vw;
+  border-bottom:2px solid gray;
+  padding:1rem;
+  padding-top:0rem;
+ 
+}
+
+.query-container input,.query-container select{
+ 
+  padding:0.4rem;
+  border:none;
+  outline:none;
+  color:rgb(68, 66, 66);
+  border-radius:5px;
+  border:1px solid rgb(37, 37, 84);
+  background-color:rgb(192, 195, 195) ;
+   font-size: 1rem;
+  font-weight: 500;
+
+
+}
+.home-container .all-posts{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap:wrap;
+  gap:3rem;
+ padding:0rem 2rem;
+ margin:2rem 0rem;;
+}
+
+
+@media (max-width:800px){
+  .query-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
+  gap:1rem;
+  width:90vw;
+  border-bottom:2px solid gray;
+  padding:1rem;
+  padding-top:0rem;
+ 
+}
+.query-container input,.query-container select{
+ 
+  padding:0.5rem;
+  border:none;
+  outline:none;
+  color:rgb(68, 66, 66);
+  border-radius:5px;
+  border:1px solid rgb(37, 37, 84);
+  background-color:rgb(192, 195, 195) ;
+   font-size: 1rem;
+  font-weight: 500;
+  width:90%;
+
+
+}
+}
