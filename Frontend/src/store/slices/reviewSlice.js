@@ -52,7 +52,6 @@ const reviewSlice = createSlice({
   },
 });
 
-
 export const {
   requestStart,
   requestFailed,
@@ -64,11 +63,10 @@ export const {
   resetMessage,
 } = reviewSlice.actions;
 
-
-const API_URL = "http://localhost:3000/api/review";
+const API_URL = "https://citybuddy-1.onrender.com/api/review";
 
 // Create Review
-export const createReview = (id,data) => async (dispatch) => {
+export const createReview = (id, data) => async (dispatch) => {
   dispatch(reviewSlice.actions.requestStart());
   try {
     const res = await axios.post(`${API_URL}/create/${id}`, data, {
@@ -84,16 +82,18 @@ export const createReview = (id,data) => async (dispatch) => {
   }
 };
 
-
 export const getReviews = (id) => async (dispatch) => {
   dispatch(reviewSlice.actions.requestStart());
   console.log(id, "postId in getReviews");
   try {
-    const res = await axios.get(`http://localhost:3000/api/review/getall/${id}`, {
-      withCredentials: true,
-    });
+    const res = await axios.get(
+      `https://citybuddy-1.onrender.com/api/review/getall/${id}`,
+      {
+        withCredentials: true,
+      }
+    );
     console.log(res.data.message, "reviews in getReviews");
-    console.log("hhhhhhh")
+    console.log("hhhhhhh");
     dispatch(reviewSlice.actions.getReviewsSuccess(res.data));
     dispatch(reviewSlice.actions.resetError());
   } catch (err) {
@@ -111,7 +111,7 @@ export const updateReview = (reviewId, data) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     });
     dispatch(updateReviewSuccess(res.data));
-    console.log(res.data.message)
+    console.log(res.data.message);
     toast.success(res.data.message);
     dispatch(resetError());
   } catch (err) {
